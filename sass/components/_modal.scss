@@ -1,0 +1,49 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 40px;
+    background: var(--secondary-color);
+    width: 528px;
+    height: 581px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms var(--timing-function) 250ms;
+    
+    &__button {
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        display: inline-block;
+        width: 30px; ;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        transition: fill 250ms var(--timing-function);
+        fill: var(--black-text-color);
+        
+        &:hover,
+        &:focus {
+          cursor: pointer;
+          fill: var(--accent-color);
+          outline: none;
+        }
+    }
+    
+    &__closed {
+      vertical-align: middle;
+      width: 11px;
+      height: 11px;
+    } 
+
+    &__title {
+      display: block;
+      font-size: 20px;
+      line-height: 1.15;
+      text-align: center;
+      color: var(--title-text-color);
+      margin-bottom: 12px;
+    }
+  }

@@ -1,0 +1,10 @@
+.page-header {
+  border-bottom: 1px solid #ececec;
+  color: #000000;
+
+  &__container {
+     @extend .container;
+     display: flex;
+     align-items: center;
+  }
+}
